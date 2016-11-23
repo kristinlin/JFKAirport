@@ -22,6 +22,11 @@ public class YoRPG
     //each round, a Warrior and a Monster will be instantiated...
     private Character pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name?
+    private Warrior w = new Warrior();
+    private Mage m = new Mage();
+    private Rogue r = new Rogue();
+    private Bard b = new Bard();
+    private Knight k = new Knight();
 
     private int moveCount;
     private boolean gameOver;
@@ -80,7 +85,11 @@ public class YoRPG
 	catch ( IOException e ) { }
 	
 	System.out.println("\nChooseth thy character:");
-	System.out.println(Character.about());
+	System.out.println(w.about());
+	System.out.println(m.about());
+	System.out.println(r.about());
+	System.out.println(b.about());
+	System.out.println(k.about());
 	System.out.print("Selection: ");
 	
 	try {

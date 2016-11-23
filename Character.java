@@ -1,4 +1,4 @@
-public class Character{
+public abstract class Character{
     protected int hp;
     protected int strength;
     protected int defense;
@@ -32,24 +32,16 @@ public class Character{
 	return damage;
     }
 
-    //decreases defense by 30 and adds .3 to attackRating
-    public void specialize() {
-	defense = 10;
-	attackRating = 0.7;
-    }
+    public abstract void specialize();
 
-    //sets defense as 40 and attackRating at .4
-    public void normalize() {
-	defense = 40;
-	attackRating = 0.4;
-    }
+    public abstract void normalize();
 
     //accessor for name variable
     public String getName() {
 	return name;
     }
 
-    public static String about(){
+    public abstract String about();/*{
 	String warriorDes = "1: Warrior- Strong, but not much else.";
 	String monsterDes = "Monster- The enemy, good stats all around.";
 	String mageDes = "2: Mage- Long lived but weak.";
@@ -57,5 +49,5 @@ public class Character{
 	String bardDes = "4: Bard- Creative, but not very strong.";
 	String knightDes = "5: Knight- Super high HP, almost no attack strength.";
 	return warriorDes + "\n" + mageDes + "\n" + rogueDes + "\n" + bardDes + "\n" + knightDes + "\n" + monsterDes;
-    }
+	}*/
 }

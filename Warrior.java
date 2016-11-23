@@ -1,10 +1,4 @@
-//Team JFKAirport (Joanna Zhou, Fabiha Ahmed, Kristin Lin)
-//APCS1 pd 05
-//HW#31 -- Ye Olde Role Playing Game, Improved
-//2016-11-17
-
 public class Warrior extends Character {
-    private String name;
 
     //default constructor
     public Warrior(){
@@ -21,4 +15,21 @@ public class Warrior extends Character {
 	name = n;
     }
 
+    //sets defense and attackRating as normal
+    public void normalize(){
+	attackRating = 0.4;
+	defense = 40;
+    }
+
+    //sets defense as 10 and attackRating as 1.6
+    public void specialize(){
+	attackRating = 1.6;
+	defense = 10;
+    }
+
+    //about
+    public String about(){
+	return "1: Warrior- Strong, but not much else.";
+    }
+    
 }
