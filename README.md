@@ -1,6 +1,4 @@
 # JFKAirport
-A trio
-
 
 FEATURE ADDITIONS
 
