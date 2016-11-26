@@ -4,7 +4,7 @@ public class Bard extends Character {
     public Bard(){
 	name = "pat";
 	hp = 200;
-	strength = 110;
+	strength = 125;
 	defense = 60;
 	attackRating = 0.3;
     }
