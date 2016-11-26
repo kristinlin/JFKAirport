@@ -22,11 +22,6 @@ public class YoRPG
     //each round, a Warrior and a Monster will be instantiated...
     private Character pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name?
-    private Warrior w = new Warrior();
-    private Mage m = new Mage();
-    private Rogue r = new Rogue();
-    private Bard b = new Bard();
-    private Knight k = new Knight();
 
     private int moveCount;
     private boolean gameOver;
@@ -84,6 +79,12 @@ public class YoRPG
 	}
 	catch ( IOException e ) { }
 	
+    Warrior w = new Warrior(name);
+    Mage m = new Mage(name);
+    Rogue r = new Rogue(name);
+    Bard b = new Bard(name);
+    Knight k = new Knight(name);
+	
 	System.out.println("\nChooseth thy character:");
 	System.out.println(w.about());
 	System.out.println(m.about());
@@ -98,15 +99,20 @@ public class YoRPG
 	catch ( IOException e ) { }
 
 	if(characterType == 1){
-	    pat = new Warrior(name);}
+	    pat = w;
+	}
 	else if(characterType == 2){
-	    pat = new Mage(name);}
+	    pat = m;
+	}
 	else if(characterType == 3){
-	    pat = new Rogue(name);}
+	    pat = r;
+	}
 	else if(characterType == 4){
-	    pat = new Bard(name);}
+	    pat = b;
+	}
 	else if(characterType == 5){
-	    pat = new Knight(name);}
+	    pat = k;
+	}
 
     }//end newGame()
 
@@ -160,7 +166,7 @@ public class YoRPG
 	    if ( !smaug.isAlive() && !pat.isAlive() ) {
 		System.out.println( "'Twas an epic battle, to be sure... " + 
 				    "You cut ye olde monster down, but " +
-				    "with its dying breath ye olde monster. " +
+				    "with its dying breath ye olde monster " +
 				    "laid a fatal blow upon thy skull." );
 		return false;
 	    }
