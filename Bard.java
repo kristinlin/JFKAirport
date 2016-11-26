@@ -23,7 +23,7 @@ public class Bard extends Character {
 
     //sets defense as 10 and attackRating as 1.6
     public void specialize(){
-	attackRating =0.6;
+	attackRating = 0.6;
 	defense = 30;
     }
 
