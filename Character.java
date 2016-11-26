@@ -28,9 +28,9 @@ public abstract class Character{
 	damage = (int)(strength * attackRating) - n.getDefense();
 	//nuances in damage for a more realistic duel
 	if (Math.random() < .5) {
-	    damage += (int)(Math.random() * 10);
+	    damage += (int)(Math.random() * 5);
 	} else {
-	    damage -= (int)(Math.random() * 10);
+	    damage -= (int)(Math.random() * 5);
 	}
 	if(damage < 0) {
 	    damage = 0;
