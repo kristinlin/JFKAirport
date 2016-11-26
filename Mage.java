@@ -3,10 +3,10 @@ public class Mage extends Character {
     //default constructor
     public Mage(){
 	name = "pat";
-	hp = 125;
-	strength = 100;
-	defense = 40;
-	attackRating = 0.4;
+	hp = 200;
+	strength = 150;
+	defense = 30;
+	attackRating = 0.6;
     }
 
     //overloaded constructor with name
@@ -23,13 +23,13 @@ public class Mage extends Character {
 
     //sets defense as 10 and attackRating as 1.6
     public void specialize(){
-	attackRating = 1.6;
-	defense = 10;
+	attackRating = 1.2;
+	defense = 15;
     }
 
     //about
     public String about(){
-	return "2: Mage- Long lived but weak.";
+	return "2: Mage- Powerful but weak.";
     }
 
 }
