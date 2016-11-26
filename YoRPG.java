@@ -1,7 +1,7 @@
 //Team JFKAirport (Joanna Zhou, Fabiha Ahmed, Kristin Lin)
 //APCS1 pd 05
-//HW#32 -- Ye Olde Role Playing Game, Expanded
-//2016-11-20
+//HW#35 -- Ye Olde Role Playing Game, Realized
+//2016-11-26
 
 /*=============================================
   class YoRPG -- Driver file for Ye Olde Role Playing Game.
@@ -113,6 +113,16 @@ public class YoRPG
 	else if(characterType == 5){
 	    pat = k;
 	}
+
+	s = "Note, dear adventurer, that thy attack can change with luck.";
+	System.out.println(s);
+	s = "For with luck thou can gain great power.";
+	System.out.println(s);
+	s = "But thou shall be more susceptible to harm.";
+	System.out.println(s);
+	s = "If thou faceth a monster, that is.";
+	System.out.println(s);
+	s = "All the same, fare well, dear adventurer.";
 
     }//end newGame()
 
