@@ -29,7 +29,7 @@ public class Mage extends Character {
 
     //about
     public String about(){
-	return "2: Mage- Powerful but weak.";
+	return "2: Mage- Powerful but weak defense.";
     }
 
 }

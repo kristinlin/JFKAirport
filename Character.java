@@ -51,8 +51,8 @@ public abstract class Character{
     public abstract String about();/*{
 	String warriorDes = "1: Warrior- Strong, but not much else.";
 	String monsterDes = "Monster- The enemy, good stats all around.";
-	String mageDes = "2: Mage- Long lived but weak.";
-	String rogueDes = "3: Rogue- Sneaky, hard hitting but can't take much damage.";
+	String mageDes = "2: Mage- Powerful but weak defense.";
+	String rogueDes = "3: Rogue- Sneaky, hard to hit but can't hit very hard.";
 	String bardDes = "4: Bard- Creative, but not very strong.";
 	String knightDes = "5: Knight- High defense, almost no attack strength.";
 	return warriorDes + "\n" + mageDes + "\n" + rogueDes + "\n" + bardDes + "\n" + knightDes + "\n" + monsterDes;
