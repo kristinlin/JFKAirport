@@ -29,7 +29,7 @@ public class Knight extends Character {
 
     //about
     public String about(){
-	return "5: Knight- Super high HP, almost no attack strength.";
+	return "5: Knight- High defense, almost no attack strength.";
     }
     
 }

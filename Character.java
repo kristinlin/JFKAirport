@@ -28,12 +28,13 @@ public abstract class Character{
 	damage = (int)(strength * attackRating) - n.getDefense();
 	//nuances in damage for a more realistic duel
 	if (Math.random() < .5) {
-	    damage += (int)(Math.random() * 10);
+	    damage += (int)(Math.random() * 5);
 	} else {
-	    damage -= (int)(Math.random() * 10);
+	    damage -= (int)(Math.random() * 5);
 	}
-	if(damage < 0)
+	if(damage < 0) {
 	    damage = 0;
+	}
 	n.lowerHP(damage);
 	return damage;
     }
@@ -53,7 +54,7 @@ public abstract class Character{
 	String mageDes = "2: Mage- Long lived but weak.";
 	String rogueDes = "3: Rogue- Sneaky, hard hitting but can't take much damage.";
 	String bardDes = "4: Bard- Creative, but not very strong.";
-	String knightDes = "5: Knight- Super high HP, almost no attack strength.";
+	String knightDes = "5: Knight- High defense, almost no attack strength.";
 	return warriorDes + "\n" + mageDes + "\n" + rogueDes + "\n" + bardDes + "\n" + knightDes + "\n" + monsterDes;
 	}*/
 }
