@@ -17,8 +17,8 @@ public class Mage extends Character {
 
         //sets defense and attackRating as normal
     public void normalize(){
-	attackRating = 0.4;
-	defense = 40;
+	attackRating = 0.6;
+	defense = 30;
     }
 
     //sets defense as 10 and attackRating as 1.6

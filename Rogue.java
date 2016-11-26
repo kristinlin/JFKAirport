@@ -17,8 +17,8 @@ public class Rogue extends Character {
 
     //sets defense and attackRating to normal
     public void normalize(){
-	attackRating = 0.8;
-	defense = 20;
+	attackRating = 0.4;
+	defense = 70;
     }
 
     //sets defense as 8 and attackRating as 2.0
