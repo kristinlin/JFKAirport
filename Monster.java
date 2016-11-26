@@ -5,7 +5,7 @@ public class Monster extends Character{
 	hp = 150;
 	defense = 20;
 	attackRating = 1;
-	strength = (int)(Math.random() * 45) + 20;
+	strength = (int)(Math.random() * 50) + 50;
     }
         //sets defense and attackRating as normal
     public void normalize(){
@@ -16,11 +16,11 @@ public class Monster extends Character{
     //sets defense as 10 and attackRating as 2.0
     public void specialize(){
 	attackRating = 1.5;
-	defense = 10;
+	defense = 15;
     }
 
     //about
     public String about(){
-	return "Monster- The enemy, good stats all around.";
+	return "Monster- Mooks, really. They give it all they've got, though.";
     }
 }
