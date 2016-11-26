@@ -32,8 +32,9 @@ public abstract class Character{
 	} else {
 	    damage -= (int)(Math.random() * 10);
 	}
-	if(damage < 0)
+	if(damage < 0) {
 	    damage = 0;
+	}
 	n.lowerHP(damage);
 	return damage;
     }
